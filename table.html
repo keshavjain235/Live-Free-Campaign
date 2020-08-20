@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1 style="text-align: center;">State-Wise Statistics</h1>
+    <div id="table" class="table-responsive">
+      <table class="table table2 filter table-striped table-hover table-dark">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th class="alignleft">State</th>
+            <th>Transgenders</th>
+            <th>Child(0-6)</th>
+            <th>SC</th>
+            <th>ST</th>
+            <th>Literacy</th>
+          </tr>
+
+          <tr class="firstrow">
+            <td>-</td>
+            <td class="alignleft">India</td>
+            <td>487,803</td>
+            <td>54,854</td>
+            <td>78,811</td>
+            <td>33,293</td>
+            <td>56.07%</td>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr class="d1">
+            <td>1</td>
+            <td class="alignleft">
+              <a href="/census/state/uttar+pradesh.html">Uttar Pradesh</a>
+            </td>
+            <td>137,465</td>
+            <td>18,734</td>
+            <td>26,404</td>
+            <td>639</td>
+            <td>55.80%</td>
+          </tr>
+          <tr class="d2">
+            <td>2</td>
+            <td class="alignleft">
+              <a href="/census/state/andhra+pradesh.html">Andhra Pradesh</a>
+            </td>
+            <td>43,769</td>
+            <td>4,082</td>
+            <td>6,226</td>
+            <td>3,225</td>
+            <td>53.33%</td>
+          </tr>
+          <tr class="d1">
+            <td>3</td>
+            <td class="alignleft">
+              <a href="/census/state/maharashtra.html">Maharashtra</a>
+            </td>
+            <td>40,891</td>
+            <td>4,101</td>
+            <td>4,691</td>
+            <td>3,529</td>
+            <td>67.57%</td>
+          </tr>
+          <tr class="d2">
+            <td>4</td>
+            <td class="alignleft">
+              <a href="/census/state/bihar.html">Bihar</a>
+            </td>
+            <td>40,827</td>
+            <td>5,971</td>
+            <td>6,295</td>
+            <td>506</td>
+            <td>44.35%</td>
+          </tr>
+          <tr class="d1">
+            <td>5</td>
+            <td class="alignleft">
+              <a href="/census/state/west+bengal.html">West Bengal</a>
+            </td>
+            <td>30,349</td>
+            <td>2,376</td>
+            <td>6,474</td>
+            <td>1,474</td>
+            <td>58.83%</td>
+          </tr>
+          <tr class="d2">
+            <td>6</td>
+            <td class="alignleft">
+              <a href="/census/state/madhya+pradesh.html">Madhya Pradesh</a>
+            </td>
+            <td>29,597</td>
+            <td>3,409</td>
+            <td>4,361</td>
+            <td>5,260</td>
+            <td>53.01%</td>
+          </tr>
+          <tr class="d1">
+            <td>7</td>
+            <td class="alignleft">
+              <a href="/census/state/tamil+nadu.html">Tamil Nadu</a>
+            </td>
+            <td>22,364</td>
+            <td>1,289</td>
+            <td>4,203</td>
+            <td>180</td>
+            <td>57.78%</td>
+          </tr>
+          <tr class="d2">
+            <td>8</td>
+            <td class="alignleft">
+              <a href="/census/state/orissa.html">Orissa</a>
+            </td>
+            <td>20,332</td>
+            <td>2,125</td>
+            <td>3,236</td>
+            <td>4,553</td>
+            <td>54.35%</td>
+          </tr>
+          <tr class="d1">
+            <td>9</td>
+            <td class="alignleft">
+              <a href="/census/state/karnataka.html">Karnataka</a>
+            </td>
+            <td>20,266</td>
+            <td>1,771</td>
+            <td>3,275</td>
+            <td>1,324</td>
+            <td>58.82%</td>
+          </tr>
+          <tr class="d2">
+            <td>10</td>
+            <td class="alignleft">
+              <a href="/census/state/rajasthan.html">Rajasthan</a>
+            </td>
+            <td>16,517</td>
+            <td>2,012</td>
+            <td>2,961</td>
+            <td>1,805</td>
+            <td>48.34%</td>
+          </tr>
+          <tr class="d1">
+            <td>11</td>
+            <td class="alignleft">
+              <a href="/census/state/jharkhand.html">Jharkhand</a>
+            </td>
+            <td>13,463</td>
+            <td>1,593</td>
+            <td>1,499</td>
+            <td>3,735</td>
+            <td>47.58%</td>
+          </tr>
+          <tr class="d2">
+            <td>12</td>
+            <td class="alignleft">
+              <a href="/census/state/gujarat.html">Gujarat</a>
+            </td>
+            <td>11,544</td>
+            <td>1,028</td>
+            <td>664</td>
+            <td>1,238</td>
+            <td>62.82%</td>
+          </tr>
+          <tr class="d1">
+            <td>13</td>
+            <td class="alignleft">
+              <a href="/census/state/assam.html">Assam</a>
+            </td>
+            <td>11,374</td>
+            <td>1,348</td>
+            <td>774</td>
+            <td>1,223</td>
+            <td>53.69%</td>
+          </tr>
+          <tr class="d2">
+            <td>14</td>
+            <td class="alignleft">
+              <a href="/census/state/punjab.html">Punjab</a>
+            </td>
+            <td>10,243</td>
+            <td>813</td>
+            <td>3,055</td>
+            <td>0</td>
+            <td>59.75%</td>
+          </tr>
+          <tr class="d1">
+            <td>15</td>
+            <td class="alignleft">
+              <a href="/census/state/haryana.html">Haryana</a>
+            </td>
+            <td>8,422</td>
+            <td>1,107</td>
+            <td>1,456</td>
+            <td>0</td>
+            <td>62.11%</td>
+          </tr>
+          <tr class="d2">
+            <td>16</td>
+            <td class="alignleft">
+              <a href="/census/state/chhattisgarh.html">Chhattisgarh</a>
+            </td>
+            <td>6,591</td>
+            <td>706</td>
+            <td>742</td>
+            <td>1,963</td>
+            <td>51.35%</td>
+          </tr>
+          <tr class="d1">
+            <td>17</td>
+            <td class="alignleft">
+              <a href="/census/state/uttarakhand.html">Uttarakhand</a>
+            </td>
+            <td>4,555</td>
+            <td>512</td>
+            <td>731</td>
+            <td>95</td>
+            <td>62.65%</td>
+          </tr>
+          <tr class="d2">
+            <td>18</td>
+            <td class="alignleft">
+              <a href="/census/state/delhi.html">Delhi</a>
+            </td>
+            <td>4,213</td>
+            <td>311</td>
+            <td>490</td>
+            <td>0</td>
+            <td>62.99%</td>
+          </tr>
+          <tr class="d1">
+            <td>19</td>
+            <td class="alignleft">
+              <a href="/census/state/jammu+and+kashmir.html"
+                >Jammu and Kashmir</a
+              >
+            </td>
+            <td>4,137</td>
+            <td>487</td>
+            <td>207</td>
+            <td>385</td>
+            <td>49.29%</td>
+          </tr>
+          <tr class="d2">
+            <td>20</td>
+            <td class="alignleft">
+              <a href="/census/state/kerala.html">Kerala</a>
+            </td>
+            <td>3,902</td>
+            <td>295</td>
+            <td>337</td>
+            <td>51</td>
+            <td>84.61%</td>
+          </tr>
+          <tr class="d1">
+            <td>21</td>
+            <td class="alignleft">
+              <a href="/census/state/himachal+pradesh.html">Himachal Pradesh</a>
+            </td>
+            <td>2,051</td>
+            <td>154</td>
+            <td>433</td>
+            <td>118</td>
+            <td>62.10%</td>
+          </tr>
+          <tr class="d2">
+            <td>22</td>
+            <td class="alignleft">
+              <a href="/census/state/manipur.html">Manipur</a>
+            </td>
+            <td>1,343</td>
+            <td>177</td>
+            <td>40</td>
+            <td>378</td>
+            <td>67.50%</td>
+          </tr>
+          <tr class="d1">
+            <td>23</td>
+            <td class="alignleft">
+              <a href="/census/state/tripura.html">Tripura</a>
+            </td>
+            <td>833</td>
+            <td>66</td>
+            <td>172</td>
+            <td>181</td>
+            <td>71.19%</td>
+          </tr>
+          <tr class="d2">
+            <td>24</td>
+            <td class="alignleft">
+              <a href="/census/state/meghalaya.html">Meghalaya</a>
+            </td>
+            <td>627</td>
+            <td>134</td>
+            <td>3</td>
+            <td>540</td>
+            <td>57.40%</td>
+          </tr>
+          <tr class="d1">
+            <td>25</td>
+            <td class="alignleft">
+              <a href="/census/state/arunachal+pradesh.html"
+                >Arunachal Pradesh</a
+              >
+            </td>
+            <td>495</td>
+            <td>64</td>
+            <td>0</td>
+            <td>311</td>
+            <td>52.20%</td>
+          </tr>
+          <tr class="d2">
+            <td>26</td>
+            <td class="alignleft"><a href="/census/state/goa.html">Goa</a></td>
+            <td>398</td>
+            <td>34</td>
+            <td>9</td>
+            <td>33</td>
+            <td>73.90%</td>
+          </tr>
+          <tr class="d1">
+            <td>27</td>
+            <td class="alignleft">
+              <a href="/census/state/nagaland.html">Nagaland</a>
+            </td>
+            <td>398</td>
+            <td>63</td>
+            <td>0</td>
+            <td>335</td>
+            <td>70.75%</td>
+          </tr>
+          <tr class="d2">
+            <td>28</td>
+            <td class="alignleft">
+              <a href="/census/state/puducherry.html">Puducherry</a>
+            </td>
+            <td>252</td>
+            <td>16</td>
+            <td>40</td>
+            <td>0</td>
+            <td>60.59%</td>
+          </tr>
+          <tr class="d1">
+            <td>29</td>
+            <td class="alignleft">
+              <a href="/census/state/mizoram.html">Mizoram</a>
+            </td>
+            <td>166</td>
+            <td>26</td>
+            <td>1</td>
+            <td>146</td>
+            <td>87.14%</td>
+          </tr>
+          <tr class="d2">
+            <td>30</td>
+            <td class="alignleft">
+              <a href="/census/state/chandigarh.html">Chandigarh</a>
+            </td>
+            <td>142</td>
+            <td>16</td>
+            <td>22</td>
+            <td>0</td>
+            <td>72.22%</td>
+          </tr>
+          <tr class="d1">
+            <td>31</td>
+            <td class="alignleft">
+              <a href="/census/state/sikkim.html">Sikkim</a>
+            </td>
+            <td>126</td>
+            <td>14</td>
+            <td>9</td>
+            <td>37</td>
+            <td>65.18%</td>
+          </tr>
+          <tr class="d2">
+            <td>32</td>
+            <td class="alignleft">
+              <a href="/census/state/daman+and+diu.html">Daman and Diu</a>
+            </td>
+            <td>59</td>
+            <td>10</td>
+            <td>1</td>
+            <td>2</td>
+            <td>75.51%</td>
+          </tr>
+          <tr class="d1">
+            <td>33</td>
+            <td class="alignleft">
+              <a href="/census/state/andaman+and+nicobar+islands.html"
+                >Andaman and Nicobar Islands</a
+              >
+            </td>
+            <td>47</td>
+            <td>5</td>
+            <td>0</td>
+            <td>3</td>
+            <td>73.81%</td>
+          </tr>
+          <tr class="d2">
+            <td>34</td>
+            <td class="alignleft">
+              <a href="/census/state/dadra+and+nagar+haveli.html"
+                >Dadra and Nagar Haveli</a
+              >
+            </td>
+            <td>43</td>
+            <td>5</td>
+            <td>0</td>
+            <td>22</td>
+            <td>73.68%</td>
+          </tr>
+          <tr class="d1">
+            <td>35</td>
+            <td class="alignleft">
+              <a href="/census/state/lakshadweep.html">Lakshadweep</a>
+            </td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>50.00%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <style>
+    #table {
+      margin-right: 50px;
+    }
+  </style>
+</html>
