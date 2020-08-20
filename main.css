@@ -155,6 +155,7 @@ body {
     text-decoration: none;
     margin: auto;
 }
+
 #cards a img{
     width: 350px;
 	height: 250px;
@@ -210,8 +211,14 @@ body {
         float: left;
     }
 
-
     #cards {
         flex-direction: column;
+        width: max-content;
+        margin: auto !important;
+    }
+
+    #cards a {
+        margin-right: 0 !important;
+        margin-top: 50px;
     }
 }
