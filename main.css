@@ -140,11 +140,13 @@ body {
 
 @media only screen and (max-width : 1024px) {
     .nav-items a {
-        margin-left: 1%;
+        margin-left: 5%;
         font-size: 70%;
     }
 
     #video {
+        margin-left: 0;
+        margin-right: 0;
         width: 100%;
         height: max-content;
     }
