@@ -162,6 +162,13 @@ body {
 	border-radius: 9999px;
 }
 
+#cardspan {
+    width: 200px !important;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
 .ps>h1 {
     text-align: center;
     width: 60%;
