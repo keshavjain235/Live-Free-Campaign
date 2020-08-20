@@ -112,61 +112,59 @@ body {
     margin-left: -100px;
 }
 
-#upper {
-    margin: 0;
-    width: 100%;
-    /* background: linear-gradient(180deg, rgba(184, 223, 239, 0.75) 14.06%, rgba(102, 169, 218, 0.5) 43.75%, rgba(113, 161, 218, 0.25) 72.92%, rgba(54, 146, 175, 0) 100%); */
-    height: 100%;
-    min-height: 335px;
-    position: relative;
-}
-
 #lower {
     margin-top: 10px;
     background-image: url("media/mercedes-mehling-7J7x8HLXQKA-unsplash.jpg");
     background-size: 100%;
     background-blend-mode: lighten;
     width: 100%;
-    height: 1000px;
+    height: 65vw;
     background-repeat: no-repeat;
     float: left;
+    position: relative;
 }
 
-#upper>span {
+#lower>span {
     width: 100%;
-    bottom: 0;
+    height: 100%;
+}
+
+#lower>span>svg {
+    bottom: 10px;
     position: absolute;
 }
 
 .ps{
     background-color: silver;
-    margin-top: 40px;
     float: left;
     width: 100%;
     text-align: center;
     padding-bottom: 200px;
 }
-.ps a{
-	display: inline-block;
-    margin-right: 100px;
-    margin-top: 100px;
-	text-decoration: none;
-}
-.ps a img{
-    width: 250px;
-	height: 250px;
-	border-radius: 9999px;
-	filter:grayscale(75%);
-	transition: 0.4s all;
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 150px;
 }
 
-.ps a:hover >img{
-	filter: none;
+#cards a{
+	display: inline-block;
+    margin-top: 100px;
+    text-decoration: none;
+    margin: auto;
+}
+#cards a img{
+    width: 350px;
+	height: 350px;
+	border-radius: 9999px;
 }
 
 .ps>h1 {
     text-align: center;
     width: 60%;
+    margin-top: 40px;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -210,12 +208,11 @@ body {
 
     #lower {
         padding-top: 0;
-        /* margin-top: 150px; */
         float: left;
-        height: max-content;
     }
 
-    #upper {
-        height: max-content;
+
+    #cards {
+        flex-direction: column;
     }
 }
