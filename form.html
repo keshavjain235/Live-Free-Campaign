@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Join Us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form style="margin-top: 150px;">
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">Donation Amount</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefault04"
+              placeholder="Enter Amount"
+              required
+            />
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01">First name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefault01"
+              placeholder="First name"
+              value="Mark"
+              required
+            />
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefault02"
+              placeholder="Last name"
+              value="Otto"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-5 mb-3">
+            <label for="validationDefault04">Street Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefault04"
+              placeholder="Street Address"
+              required
+            />
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault03">City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefault03"
+              placeholder="City"
+              required
+            />
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">State</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefault04"
+              placeholder="State"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefault05"
+              placeholder="Zip"
+              required
+            />
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Contact Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefault05"
+              placeholder="Mobile Number"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck2"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-success" type="submit">Donate</button>
+      </form>
+    </div>
+
+    <script>
+      // Disable form submissions if there are invalid fields
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (
+              form
+            ) {
+              form.addEventListener(
+                "submit",
+                function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            });
+          },
+          false
+        );
+      })();
+    </script>
+  </body>
+</html>
