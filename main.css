@@ -110,3 +110,22 @@ body {
     z-index: 1000;
     margin-left: -100px;
 }
+
+#upper {
+    margin-top: 10px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(184, 223, 239, 0.25) 14.06%, rgba(102, 169, 218, 0.5) 43.75%, rgba(113, 161, 218, 0.75) 72.92%, #006B8D 100%);
+    height: 1000px;
+    float: left;
+}
+
+#lower {
+    margin-top: 0px;
+    background-image: url("media/mercedes-mehling-7J7x8HLXQKA-unsplash.jpg");
+    background-size: 100%;
+    background-blend-mode: lighten;
+    width: 100%;
+    height: 2000px;
+    background-repeat: no-repeat;
+    float: left;
+}
